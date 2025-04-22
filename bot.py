@@ -14,11 +14,11 @@ from datetime import datetime
 
 raw_config = json.loads(open('./conf/settings.txt', 'r').read())
 
-bot_token = raw_config['7860206121:AAEXAn4_DWT5ibbV2wmKoESauRlyh71lzhc']
-account_sid = raw_config['ACa921ac1c7f83c6a8ebc3637c34ae3d1f']
-auth_token = raw_config['ee94306dccca44bc36dca8a05fc3856f']
-ngrok = raw_config['ngrok http http://localhost:8080']
-phone_numz = raw_config['+15706528091']
+bot_token = raw_config[7860206121:AAEXAn4_DWT5ibbV2wmKoESauRlyh71lzhc]
+account_sid = raw_config[ACa921ac1c7f83c6a8ebc3637c34ae3d1f]
+auth_token = raw_config[ee94306dccca44bc36dca8a05fc3856f]
+ngrok = raw_config[ngrok http http://localhost:8080]
+phone_numz = raw_config[+15706528091]
 
 client = Client(account_sid, auth_token)
 bot = telebot.TeleBot(bot_token)  
